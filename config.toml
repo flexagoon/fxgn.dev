@@ -4,7 +4,7 @@ theme = 'hugo-coder'
 languageCode = 'en'
 
 [params]
-  author = 'flexagoon. test test'
+  author = 'flexagoon.'
   info = "world's first programming tomato"
   avatarurl = 'images/logo.png'
   colorscheme = 'dark'

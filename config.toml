@@ -1,0 +1,43 @@
+baseURL = 'http://flexagoon.com'
+title = 'flexagoon.'
+theme = 'hugo-coder'
+languageCode = 'en'
+
+[params]
+  author = 'flexagoon.'
+  info = "world's first programming tomato"
+  avatarurl = 'images/logo.png'
+  colorscheme = 'dark'
+
+  description = "flexagoon's website"
+  keywords = 'blog,personal,developer,flexagoon,dart'
+
+  since = 2022
+
+  customscss = ['scss/custom.scss']
+
+[[params.social]]
+  name = 'GitHub'
+  icon = 'fa fa-github fa-2x'
+  url = 'https://github.com/flexagoon'
+  weight = 1
+[[params.social]]
+  name = 'GitLab'
+  icon = 'fa fa-gitlab fa-2x'
+  url = 'https://gitlab.com/flexagoon'
+  weight = 2
+[[params.social]]
+  name = 'Telegram'
+  icon = 'fa fa-telegram fa-2x'
+  url = 'https://t.me/flexagoon'
+  weight = 3
+[[params.social]]
+  name = 'Reddit'
+  icon = 'fa fa-reddit fa-2x'
+  url = 'https://reddit.com/u/sevenisnotanumber2'
+  weight = 4
+[[params.social]]
+  name = 'Email'
+  icon = 'fa fa-envelope fa-2x'
+  url = 'mailto:contact@flexagoon.com'
+  weight = 5

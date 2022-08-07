@@ -20,4 +20,10 @@ This is not a hard requirement, however, my name should preferrably be written i
 
 # Logo
 
-My logo is available in two versions - colored and white. I'm currently in the process of improving the quality of it. When I finish it, you'll be able to download it from this page.
+You can download my logo in three variants here. All three variants are in the SVG format.
+
+:red_circle: [Colored variant](/images/logo-color.svg)  
+:white_circle: [White variant](/images/logo-white.svg)  
+:black_circle: [Black variant](/images/logo-black.svg)
+
+The white and black variants can be of course recolored to a different color with any vector graphics editing program. 

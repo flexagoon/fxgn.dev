@@ -8,7 +8,7 @@ enableEmoji = true
 [params]
   author = 'flexagoon.'
   info = "world's first programming tomato"
-  avatarurl = 'images/logo.png'
+  avatarurl = 'images/pfp.png'
   colorscheme = 'dark'
   since = 2022
 

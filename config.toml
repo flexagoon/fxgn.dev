@@ -23,19 +23,19 @@ enableEmoji = true
   url = 'https://github.com/flexagoon'
   weight = 1
 [[params.social]]
-  name = 'GitLab'
-  icon = 'fa fa-gitlab fa-2x'
-  url = 'https://gitlab.com/flexagoon'
-  weight = 2
-[[params.social]]
   name = 'Telegram'
   icon = 'fa fa-telegram fa-2x'
   url = 'https://t.me/flexagoon'
-  weight = 3
+  weight = 2
 [[params.social]]
   name = 'Reddit'
   icon = 'fa fa-reddit fa-2x'
   url = 'https://reddit.com/u/sevenisnotanumber2'
+  weight = 3
+[[params.social]]
+  name = 'YouTube'
+  icon = 'fa fa-youtube-play fa-2x'
+  url = 'https://youtube.com/channel/UCT_zuaWs6SitJF2lvuHO7xw'
   weight = 4
 [[params.social]]
   name = 'Email'

@@ -44,3 +44,11 @@ aliases:
 Вы в день самоуправления:
 
 ![вы](/images/supday/giraffe.png)
+
+# Наша команда
+
+По всем вопросам можно писать в Telegram команде директора.
+
+**Золотаревский Павел** - Директор ([@flexagoon](https://t.me/flexagoon/))  
+**Вэскер Филипп** и **Матвеев Павел** - Заместители Директора ([@FoxFil](https://t.me/FoxFil/) и [@pasha_matveev](https://t.me/pasha_matveev/))
+

@@ -9,7 +9,7 @@ enableEmoji = true
   author = 'flexagoon.'
   info = "world's first programming tomato"
   avatarurl = 'images/pfp.png'
-  colorscheme = 'dark'
+  colorscheme = 'light'
   since = 2022
 
   description = "flexagoon's website"

@@ -47,3 +47,6 @@ enableEmoji = true
 #   name = 'Brand Guidelines'
 #   url = 'brand/'
 #   weight = 1
+
+[params.plausibleAnalytics]
+  domain = "flexagoon.com/supday"

@@ -88,37 +88,9 @@
        url('../fonts/inter-v12-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Circe */
-@font-face {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 600;
-    src: local(''),
-        url('../fonts/Circe-Bold.woff2') format('woff2'),
-        url('../fonts/Circe-Bold.woff') format('woff'),
-}
-
-@font-face {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/Circe-Regular.woff2') format('woff2'),
-        url('../fonts/Circe-Regular.woff') format('woff'),
-}
-
-/* TEMPORARY CHANGE */
-/* h1 {
+h1 {
   font-weight: 800;
   font-style: italic;
-} */
-
-h1 {
-  font-weight: 600;
-}
-
-.float-container {
-  display: none;
 }
 
 .navigation .navigation-title {
@@ -127,5 +99,3 @@ h1 {
   text-transform: none;
   letter-spacing: normal;
 }
-
-

@@ -1,0 +1,17 @@
+@import 'font';
+
+h1,
+h2,
+b {
+	font-weight: 800;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+p {
+	font-size: 24px;
+	max-width: 600px;
+}

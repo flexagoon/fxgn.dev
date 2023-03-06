@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexagoon</title>
+
+    {{ $scss := resources.Get "scss/main.scss" }}
+    {{ $style := $scss | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ block "head" . }} {{ end }}
+  </head>
+  <body>
+    <header>
+      <a href="/" class="button">
+      	<img src="/images/logo-black.svg" alt="logo" />
+      </a>
+    </header>
+    <main>
+      <div>
+        {{ block "main" . }} {{ .Content }} {{ end }}
+      </div>
+    </main>
+  </body>
+</html>

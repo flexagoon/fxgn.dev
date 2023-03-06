@@ -8,11 +8,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - (#{$logo-size} + 26px) * 2);
-  margin-top: $logo-size + 26px;
-  margin-bottom: $logo-size + 26px;
   padding-left: 30px;
   padding-right: 30px;
+
+  min-height: calc(100vh - (#{$logo-size-mobile} + 26px) * 2);
+  margin-top: $logo-size-mobile + 26px;
+  margin-bottom: $logo-size-mobile + 26px;
+
+  @media (min-width: 600px) {
+    min-height: calc(100vh - (#{$logo-size-desktop} + 26px) * 2);
+    margin-top: $logo-size-desktop + 26px;
+    margin-bottom: $logo-size-desktop + 26px;
+  }
 }
 
 body {

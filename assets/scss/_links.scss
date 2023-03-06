@@ -1,0 +1,14 @@
+a {
+  border-radius: 8px;
+  padding: 5px;
+  color: black;
+
+  &:hover {
+    background-color: #00000020;
+  }
+
+  &.button {
+    text-decoration: none;
+    font-size: 16px;
+  }
+}

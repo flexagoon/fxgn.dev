@@ -1,11 +1,9 @@
 a {
-  border-radius: 8px;
-  padding: 12px 5px;
   color: black;
 
-  @media (pointer: fine) {
-    padding: 5px;
+  display: inline-block;
 
+  @media (hover: hover) {
     &:hover {
       background-color: #00000020;
     }
@@ -14,6 +12,13 @@ a {
   &.button {
     text-decoration: none;
     font-size: 16px;
+
+    border-radius: 8px;
+    padding: 12px 5px;
+
+    @media (pointer: fine) {
+      padding: 5px;
+    }
 
     &:not(#header-button) {
       display: block;

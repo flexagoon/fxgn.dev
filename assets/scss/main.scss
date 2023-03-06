@@ -12,11 +12,13 @@ main {
   padding-right: 30px;
 
   min-height: calc(100vh - (#{$logo-size-mobile} + 26px) * 2);
+  min-height: calc(100dvh - (#{$logo-size-mobile} + 26px) * 2);
   margin-top: $logo-size-mobile + 26px;
   margin-bottom: $logo-size-mobile + 26px;
 
   @media (min-width: 600px) {
     min-height: calc(100vh - (#{$logo-size-desktop} + 26px) * 2);
+    min-height: calc(100dvh - (#{$logo-size-mobile} + 26px) * 2);
     margin-top: $logo-size-desktop + 26px;
     margin-bottom: $logo-size-desktop + 26px;
   }

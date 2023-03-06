@@ -1,0 +1,15 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:contact@flexagoon.com
+Contact: https://t.me/flexagoon
+Expires: 2024-03-06T22:00:00.000Z
+Preferred-Languages: en, ru
+Canonical: https://flexagoon.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQTLyp+syfMVkunsX1RBWCnj8MSMrwUCZAZVnAAKCRBBWCnj8MSM
+r3qpAP9HxxmJkAGHCdQPBgi51C23V9XH790Yz/+yEjDFR3lqbQEApMomwadp2pxk
+kCzpX8G6ENbD/+swfudqpkZ+2LxZkQk=
+=M6f7
+-----END PGP SIGNATURE-----

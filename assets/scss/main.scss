@@ -8,9 +8,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  min-height: calc(100vh - (#{$logo-size} + 26px) * 2);
+  margin-top: $logo-size + 26px;
+  margin-bottom: $logo-size + 26px;
   padding-left: 30px;
   padding-right: 30px;
 }

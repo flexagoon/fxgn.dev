@@ -1,9 +1,11 @@
 a {
   border-radius: 8px;
-  padding: 5px;
+  padding: 12px 5px;
   color: black;
 
-  @media (hover: hover) {
+  @media (pointer: fine) {
+    padding: 5px;
+
     &:hover {
       background-color: #00000020;
     }

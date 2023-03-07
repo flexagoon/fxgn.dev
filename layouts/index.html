@@ -1,16 +1,7 @@
 {{ define "head" }}
-<style>
-    h1 {
-        margin-bottom: 0px;
-    }
-
-    h2 {
-        font-weight: normal;
-        font-style: normal;
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-</style>
+{{ $scss := resources.Get "scss/pages/index.scss" }}
+{{ $style := $scss | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 
 {{ define "main" }}

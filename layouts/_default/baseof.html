@@ -6,6 +6,9 @@
     <meta name="description" content="i am flexagoon" />
     <title>flexagoon</title>
 
+    <link rel="icon" type="image/svg+xml" href="/images/logo-color.svg">
+    {{/*  <link rel="icon" type="image/png" href="/icons/favicon.png">  */}}
+
     {{ $scss := resources.Get "scss/main.scss" }}
     {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">

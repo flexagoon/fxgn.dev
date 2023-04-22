@@ -1,0 +1,9 @@
+{{ define "head" }}
+{{ $scss := resources.Get "scss/pages/index.scss" }}
+{{ $style := $scss | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+{{ define "main" }}
+<h1>404</h1>
+<h2>this page is a salad</h2>
+{{ end }}

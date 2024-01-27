@@ -8,6 +8,9 @@
 
     <link rel="icon" type="image/svg+xml" href="/images/logo-color.svg">
 
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     {{ $scss := resources.Get "scss/main.scss" }}
     {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">

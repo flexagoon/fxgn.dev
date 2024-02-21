@@ -6,6 +6,10 @@
 
 @import "callouts";
 
+* {
+  min-width: 0px;
+}
+
 main {
   display: flex;
   justify-content: center;

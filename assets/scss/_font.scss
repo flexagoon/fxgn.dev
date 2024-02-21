@@ -3,6 +3,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-100.woff2") format("woff2");
 }
@@ -12,6 +13,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-200.woff2") format("woff2");
 }
@@ -21,6 +23,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-300.woff2") format("woff2");
 }
@@ -30,6 +33,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-regular.woff2") format("woff2");
 }
@@ -39,6 +43,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2");
 }
@@ -48,6 +53,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2");
 }
@@ -57,6 +63,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-700.woff2") format("woff2");
 }
@@ -66,6 +73,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-800.woff2") format("woff2");
 }
@@ -75,10 +83,13 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: local(""),
     url("/fonts/inter-v12-latin_cyrillic-900.woff2") format("woff2");
 }
 
 :root {
-  font-family: "Inter";
+  // https://github.com/system-fonts/modern-font-stacks#neo-grotesque
+  font-family:
+    Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }

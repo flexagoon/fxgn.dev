@@ -1,3 +1,9 @@
 baseURL = 'https://fxgn.dev/'
 languageCode = 'en-us'
 title = 'flexagoon'
+
+[markup.highlight]
+style = 'algol'
+
+[markup.goldmark.renderer]
+unsafe = true

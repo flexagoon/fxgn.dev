@@ -1,0 +1,22 @@
+.callout {
+  border: solid 2px;
+  padding: 10px;
+  margin: 15px;
+  max-width: 550px;
+
+  p {
+    margin: 0px;
+  }
+
+  &::before {
+    font-weight: bold;
+  }
+
+  & > :first-child {
+    margin-top: 10px;
+  }
+
+  &.note::before {
+    content: 'NOTE';
+  }
+}

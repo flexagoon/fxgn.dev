@@ -8,12 +8,5 @@
     Cross-Origin-Opener-Policy: same-origin
     Cross-Origin-Resource-Policy: same-origin
 
-/*.css
-    Cross-Origin-Resource-Policy: cross-origin
-
 /fonts/*
-    Cross-Origin-Resource-Policy: cross-origin
     Access-Control-Allow-Origin: *
-
-/images/*
-    Cross-Origin-Resource-Policy: cross-origin

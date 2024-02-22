@@ -8,15 +8,7 @@
     margin: 0px;
   }
 
-  &::before {
-    font-weight: bold;
-  }
-
-  & > :first-child {
-    margin-top: 10px;
-  }
-
-  &.note::before {
-    content: 'NOTE';
+  > :first-child {
+    margin-bottom: 10px;
   }
 }

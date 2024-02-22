@@ -32,4 +32,8 @@ img {
 
 code {
   font-style: normal;
+
+  pre & {
+    font-size: 12px;
+  }
 }

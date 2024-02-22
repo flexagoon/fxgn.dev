@@ -28,6 +28,10 @@ main {
     margin-top: $logo-size-desktop + 26px;
     margin-bottom: $logo-size-desktop + 26px;
   }
+
+  >* {
+    max-width: 600px;
+  }
 }
 
 body {

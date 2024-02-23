@@ -12,6 +12,9 @@
     {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+    {{ $code := resources.Get "css/code.css" }}
+    <link rel="stylesheet" href="{{ $code.Permalink }}">
+
     {{ block "head" . }} {{ end }}
   </head>
   <body>

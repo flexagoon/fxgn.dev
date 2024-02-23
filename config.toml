@@ -4,6 +4,7 @@ title = 'flexagoon'
 
 [markup.highlight]
 style = 'algol'
+noClasses = false
 
 [markup.goldmark.renderer]
 unsafe = true

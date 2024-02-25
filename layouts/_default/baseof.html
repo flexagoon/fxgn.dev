@@ -8,23 +8,17 @@
 
     <link rel="icon" type="image/svg+xml" href="/images/logo-color.svg">
 
-    {{ $scss := resources.Get "scss/main.scss" }}
-    {{ $style := $scss | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-
-    {{ $code := resources.Get "css/code.css" }}
-    <link rel="stylesheet" href="{{ $code.Permalink }}">
-
-    {{ block "head" . }} {{ end }}
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/code.css">
   </head>
   <body>
-    <header>
-      <a href="/" class="button" id="header-button">
-      	<img src="/images/logo-black.svg" alt="logo" />
+    <header class="fixed top-0 w-full pt-4 bg-white">
+      <a href="/" class="block mx-auto size-12 sm:size-20 hover:bg-black/10 p-1 box-content rounded-lg">
+      	<img src="/images/logo-black.svg" alt="logo" class="h-12 sm:h-20"/>
       </a>
     </header>
-    <main>
-      <div>
+    <main class="flex justify-center items-center min-h-dvh px-8 py-[4.5rem] sm:py-[6.5rem]">
+      <div class="max-w-screen-sm">
         {{ block "main" . }} {{ .Content }} {{ end }}
       </div>
     </main>

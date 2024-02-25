@@ -2,6 +2,9 @@ baseURL = 'https://fxgn.dev/'
 languageCode = 'en-us'
 title = 'flexagoon'
 
+[params]
+description = 'hi its me im flexagoon 🍅'
+
 [markup.highlight]
 style = 'algol'
 noClasses = false

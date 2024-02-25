@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1 class="text-5xl/tight font-extrabold italic mb-2">{{ .Title }}</h1>
+
+<ol class="list-decimal" reversed="true">
+{{ range .Pages }}
+<li>
+  <a class="text-2xl italic underline hover:bg-black/10" href="{{ .RelPermalink }}">
+    {{ .Title }}
+  </a>
+</li>
+{{ end }}
+</ol>
+
+{{ end }}

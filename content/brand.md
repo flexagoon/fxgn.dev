@@ -8,14 +8,10 @@ My nickname is **flexagoon**, written exactly like that. You cannot change any
 letters or capitalize them in a different way. First letter **should not** be
 capitalized, even if in the beginning of the sentence.
 
-When using the name alone without any context, you **can** also add a period
-after it, as seen on the main page of this website and in the header.
-
 ❌ Flexagoon  
 ❌ flexagon  
 ❌ FLEXOGON  
 ✅ flexagoon  
-✅ flexagoon.
 
 ## Font
 

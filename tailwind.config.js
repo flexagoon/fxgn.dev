@@ -11,6 +11,22 @@ module.exports = {
         'sans': [ '"Inter Variable"', 'Roboto', '"Helvetica Neue"', '"Arial Nova"', '"Nimbus Sans"', 'Arial', 'sans-serif' ],
         'mono': [ 'ui-monospace', '"Cascadia Code"', '"Source Code Pro"', 'Menlo', 'Consolas', '"DejaVu Sans Mono"', 'monospace' ],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': 'black',
+            '--tw-prose-headings': 'black',
+            '--tw-prose-lead': 'black',
+            '--tw-prose-links': 'black',
+            '--tw-prose-bold': 'black',
+            '--tw-prose-quotes': 'black',
+            '--tw-prose-quote-borders': 'black',
+            '--tw-prose-captions': 'black',
+            '--tw-prose-code': 'black',
+            '--tw-prose-pre-code': 'black',
+          }
+        }
+      }
     },
   },
   plugins: [

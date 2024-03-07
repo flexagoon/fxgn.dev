@@ -55,8 +55,8 @@ move the points of the circle around.
 ```julia
 function noisify(x, y, noise_weight)
     noise_freq = 1 / noise_weight
-    nx = noise_weight * noise(noise_freq * x, noise_freq * y, 0) - nw / 2
-    ny = noise_weight * noise(noise_freq * x, noise_freq * y, 1) - nw / 2
+    nx = noise_weight * noise(noise_freq * x, noise_freq * y, 0) - noise_weight / 2
+    ny = noise_weight * noise(noise_freq * x, noise_freq * y, 1) - noise_weight / 2
     return x + nx, y + ny
 end
 

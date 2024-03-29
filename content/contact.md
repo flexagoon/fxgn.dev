@@ -12,6 +12,10 @@ because I don't need a thead -->
       <td><a href="https://github.com/flexagoon">flexagoon</a></td>
     </tr>
     <tr>
+      <td>team github:</td>
+      <td><a href="https://github.com/chftm">chftm</a></td>
+    </tr>
+    <tr>
       <td>telegram:</td>
       <td><a href="https://t.me/flexagoon">@flexagoon</a></td>
     </tr>

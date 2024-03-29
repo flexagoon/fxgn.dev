@@ -1,5 +1,5 @@
 ---
-title: "Contact me"
+title: "contact me"
 ---
 
 <!-- I'm using an html table instead of a markdown table

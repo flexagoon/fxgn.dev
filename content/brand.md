@@ -1,8 +1,8 @@
 ---
-title: "Brand Guidelines"
+title: "brand guidelines"
 ---
 
-## Nickname
+## nickname
 
 My nickname is **flexagoon**, written exactly like that. You cannot change any
 letters or capitalize them in a different way. First letter **should not** be
@@ -13,13 +13,13 @@ capitalized, even if in the beginning of the sentence.
 ❌ FLEXOGON  
 ✅ flexagoon  
 
-## Font
+## font
 
 This is not a hard requirement, however, my name should preferrably be written
 in the [Inter](https://rsms.me/inter) font. More specifically, you should use
 the **Extra Bold Italic** variant.
 
-## Logo
+## logo
 
 You can download my logo in three variants here. All three variants are in the
 SVG format.

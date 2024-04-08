@@ -19,10 +19,17 @@
       	<img src="/images/logo-black.svg" alt="logo" class="h-12 sm:h-20"/>
       </a>
     </header>
-    <main class="flex justify-center items-center min-h-dvh px-8 py-[4.5rem] sm:py-[6.5rem]">
+    <main class="flex justify-center items-center min-h-[calc(100vh-2rem)] lg:min-h-dvh px-8 pt-[4.5rem] pb-[2.5rem] sm:pb-[4.5rem] sm:pt-[6.5rem] lg:pb-[6.5rem]">
       <div class="max-w-screen-sm">
         {{ block "main" . }} {{ .Content }} {{ end }}
       </div>
     </main>
+    <footer class="text-right mr-5 mb-2 lg:fixed lg:bottom-0 lg:right-0">
+      <p class="text-base">
+        <a href="https://otomir23.me/webring/6/prev">← prev</a>
+        <a href="https://otomir23.me/webring" class="font-bold">|webring|</span>
+        <a href="https://otomir23.me/webring/6/next">next →</a>
+      </p>
+    </footer>
   </body>
 </html>

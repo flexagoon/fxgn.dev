@@ -9,4 +9,4 @@ title: Sources
 
 Cash flow:
 
-https://docs.google.com/spreadsheets/d/1KEDhHmuNQG7S_CQJw4salWpgEBmxIbHoFR1atJqu0wM/edit?usp=sharing
+https://s.42l.fr/M9zE4-fE

@@ -19,8 +19,6 @@
     "@playform/compress": "^0.1.4",
     "astro": "^4.15.12",
     "astro-font": "^0.1.81",
-    "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.13.1",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.3"

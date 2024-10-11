@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../../layouts/Page.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Page title="blog">
+  <h1 class="mb-2 text-5xl/tight font-extrabold italic">blog</h1>
+  <ol class="list-decimal" reversed="true">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            class="text-2xl italic underline hover:bg-black/10"
+            href={`/blog/${post.slug}`}
+          >
+            {post.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</Page>

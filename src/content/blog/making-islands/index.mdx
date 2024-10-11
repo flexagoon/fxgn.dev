@@ -1,8 +1,10 @@
 ---
 title: "making islands"
-date: 2024-02-24T01:10:00+02:00
-draft: false
+description: "using procedural generation to create uninhabited islands"
+pubDate: "2024-02-24"
 ---
+
+import Note from "../../../components/mdx/Note.astro";
 
 Procedural generation has always been an area of programming that interested me,
 however, I've never really done anything related to it before (except for writing
@@ -11,12 +13,12 @@ understand how the algorithm works). But after watching a talk from the 2018
 Strange Loop Conference titled ["Mapping Imaginary Cities"](https://www.youtube.com/watch?v=Ic_5gRVTQ_k),
 I finally decided to try my hand at generating stuff.
 
-Since there are already a lot of examples for procedurally generating cities or 
+Since there are already a lot of examples for procedurally generating cities or
 [entire landscapes](https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3),
 I chose to do something slightly different and generate **uninhabited islands**
 instead.
 
-{{% note %}}
+<Note>
 
 In my code examples, I will be using the [Julia](https://julialang.org) programming
 language. The code should mostly be readable even without any prior Julia
@@ -24,7 +26,7 @@ knowledge, but for the sake of simplicity, I have omitted a lot of code like
 helper functions and macros from this post. The full code for this project can
 be found [here](https://github.com/flexagoon/IslandGen).
 
-{{% /note %}}
+</Note>
 
 ## basic island shape
 
@@ -70,8 +72,8 @@ for r in 0:1°:360°
 end
 ```
 
-*(The `.|> round` at the end of the line just rounds the values of x and y. This
-is necessary to avoid some errors in future steps)*
+_(The `.|> round` at the end of the line just rounds the values of x and y. This
+is necessary to avoid some errors in future steps)_
 
 ![Wonky circle](noise1.png)
 
@@ -118,8 +120,8 @@ high points should be near the middle of the island.
 
 So, for every point, I calculate the square root of its distance to the island
 border, normalize those values to be between 0 and 1, and mutiply the noise
-values by them. *(The square root is used to make things smoother, you can use
-raw distance value as well, but the result will be less natural).*
+values by them. _(The square root is used to make things smoother, you can use
+raw distance value as well, but the result will be less natural)._
 
 ```julia
 bb = BoundingBox(border)
@@ -144,7 +146,7 @@ end
 
 ![A better height map](heightmap2.png)
 
-This actually looks pretty realistic. 
+This actually looks pretty realistic.
 
 Now let's apply some pretty colors to it:
 
@@ -358,7 +360,7 @@ does)
 
 Now the tribe and the castaway are only generated on half of the islands, and
 the mecca in generated with a 1/4 chance (it can't be generated if there's no
-tribe, so its probability is 1/2 * 1/2 = 1/4).
+tribe, so its probability is 1/2 \* 1/2 = 1/4).
 
 ## conclusion
 
@@ -377,7 +379,7 @@ now, but maybe I'll return to it later.
 Here are the main skills I acquired while working on this:
 
 1. Procedural generation
-    
+
    I got hands-on experience with multiple procedural generation methods. While
    I knew some of that stuff before, I never actually did anything in this area,
    so this experience was very valuable. I may attempt some other procedural

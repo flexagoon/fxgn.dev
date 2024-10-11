@@ -1,0 +1,105 @@
+---
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+import { AstroSeo } from "@astrolib/seo";
+import { AstroFont } from "astro-font";
+
+const { title, description, pubDate } = Astro.props;
+
+// https://github.com/withastro/astro.build/blob/d7d1810b6e48cc16d755afec49d6cc080040475b/src/components/SEO.astro#L59
+function formatCanonicalURL(url: string | URL) {
+  const path = url.toString();
+  const hasQueryParams = path.includes("?");
+
+  if (hasQueryParams) {
+    path.replace(/\/?$/, "");
+  }
+
+  return path.replace(/\/?$/, hasQueryParams ? "" : "/");
+}
+const canonicalUrl = formatCanonicalURL(
+  new URL(Astro.url.pathname, Astro.site),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/images/logo-color.svg" />
+
+    <AstroFont
+      config={[
+        {
+          name: "Inter Variable",
+          src: [
+            {
+              style: "normal",
+              path: "/fonts/InterVariable.woff2",
+            },
+            {
+              style: "italic",
+              path: "/fonts/InterVariable-Italic.woff2",
+            },
+          ],
+          display: "swap",
+          preload: true,
+          fallback: "sans-serif",
+        },
+      ]}
+    />
+
+    <AstroSeo
+      title={title ? `${title} • fxgn` : "fxgn"}
+      description={description}
+      canonical={canonicalUrl}
+      openGraph={{
+        url: canonicalUrl,
+        title: title,
+        description: description,
+        site_name: "fxgn",
+        type: pubDate ? "article" : "website",
+        article: {
+          publishedTime: pubDate && (pubDate as Date).toISOString(),
+        },
+      }}
+    />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="fxgn"
+      href={new URL("rss.xml", Astro.site)}
+    />
+
+    <ViewTransitions />
+  </head>
+
+  <body>
+    <header class="fixed top-0 w-full bg-white pt-4">
+      <a
+        href="/"
+        class="mx-auto box-content block size-12 rounded-lg p-1 hover:bg-black/10 sm:size-20"
+      >
+        <img src="/images/logo-black.svg" alt="logo" class="h-12 sm:h-20" />
+      </a>
+    </header>
+
+    <main
+      class="flex min-h-[calc(100dvh-2rem)] items-center justify-center px-8 pb-[2.5rem] pt-[4.5rem] sm:pb-[4.5rem] sm:pt-[6.5rem] lg:min-h-dvh lg:pb-[6.5rem]"
+    >
+      <div class="max-w-screen-sm">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="mb-2 mr-5 text-right lg:fixed lg:bottom-0 lg:right-0">
+      <p class="text-base">
+        <a href="https://otomir23.me/webring/6/prev">← prev</a>
+        <a href="https://otomir23.me/webring" class="font-bold">|webring|</a>
+        <a href="https://otomir23.me/webring/6/next">next →</a>
+      </p>
+    </footer>
+  </body>
+</html>

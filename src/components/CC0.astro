@@ -1,0 +1,38 @@
+---
+// @ts-nocheck
+// TypeScript doesn't recognize xmlns attributes on html
+
+import { Image } from "astro:assets";
+
+const { title, url } = Astro.props;
+---
+
+<p
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	class="text-center text-sm opacity-50 transition-opacity duration-300 hover:opacity-100"
+>
+	<a property="dct:title" rel="cc:attributionURL" href={url}>{title}</a> by
+	<a
+		rel="cc:attributionURL dct:creator"
+		property="cc:attributionName"
+		href="https://fxgn.dev">flexagoon</a
+	> is marked with <a
+		href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1"
+		target="_blank"
+		rel="license noopener noreferrer"
+		>CC0 1.0<Image
+			width="17"
+			height="17"
+			class="my-0 ml-1 inline-block align-text-bottom"
+			src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+			alt="Creative Commons Logo"
+		/><Image
+			width="17"
+			height="17"
+			class="my-0 ml-1 inline-block align-text-bottom"
+			src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"
+			alt="CC0 1.0 Badge"
+		/></a
+	>
+</p>

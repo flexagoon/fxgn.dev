@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 
 import ContentLayout from "../../layouts/Content.astro";
+import CC0 from "../../components/CC0.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -12,10 +13,13 @@ export async function getStaticPaths() {
 }
 
 const post = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site);
 
 const { Content } = await post.render();
 ---
 
 <ContentLayout {...post.data}>
   <Content />
+  <hr class="mb-3" />
+  <CC0 title={post.data.title} url={url} />
 </ContentLayout>

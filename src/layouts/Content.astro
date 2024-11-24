@@ -8,7 +8,7 @@ const meta = Astro.props;
   <article
     class="prose prose-headings:text-display prose-h1:my-8 prose-h1:text-5xl prose-h2:mt-16 prose-h2:text-4xl prose-h3:text-3xl prose-code:leading-4 hover:prose-a:bg-black/10"
   >
-    <h1>{meta.title}</h1>
+  {!meta.hideTitle && <h1>{meta.title}</h1>}
     <slot />
   </article>
 </Page>

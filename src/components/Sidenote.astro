@@ -1,0 +1,57 @@
+<label
+  ><input type="checkbox" /><small>
+    <slot />
+  </small></label
+>
+
+<style>
+  label {
+    counter-increment: sidenote;
+  }
+
+  input {
+    display: none;
+  }
+
+  /* Counter in sidebar */
+  small::before {
+    content: counter(sidenote) ".";
+  }
+
+  /* Counter in text */
+  label::after {
+    content: counter(sidenote);
+    vertical-align: super;
+    font-size: 0.7em;
+  }
+
+  @media (max-width: 1280px) {
+    small {
+      display: none;
+    }
+
+    input:checked + small {
+      display: block;
+      float: left;
+      clear: both;
+      width: 95%;
+      margin: 1rem 2.5%;
+      margin-left: 2rem;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    small {
+      display: inline;
+      float: right;
+      clear: right;
+      width: 20vw;
+      margin-right: -22vw;
+      margin-bottom: 10px;
+    }
+
+    label:hover small:not(:hover) {
+      background-color: rgb(0 0 0 / 0.1);
+    }
+  }
+</style>

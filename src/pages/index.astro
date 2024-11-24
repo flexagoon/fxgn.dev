@@ -1,5 +1,6 @@
 ---
 import Page from "../layouts/Page.astro";
+import HomepageButton from "../components/HomepageButton.astro";
 ---
 
 <Page>
@@ -8,24 +9,7 @@ import Page from "../layouts/Page.astro";
     <p class="mb-2 text-2xl">"that's literally me"</p>
   </hgroup>
 
-  <a
-    href="/contact"
-    class="block w-fit rounded-lg px-1 py-2.5 mouse:py-1 hover:bg-black/10"
-  >
-    contact →
-  </a>
-
-  <a
-    href="/brand"
-    class="block w-fit rounded-lg px-1 py-2.5 mouse:py-1 hover:bg-black/10"
-  >
-    brand →
-  </a>
-
-  <a
-    href="/blog"
-    class="block w-fit rounded-lg px-1 py-2.5 mouse:py-1 hover:bg-black/10"
-  >
-    blog →
-  </a>
+  <HomepageButton href="/contact" text="contact" />
+  <HomepageButton href="/about" text="about" />
+  <HomepageButton href="/blog" text="blog" />
 </Page>

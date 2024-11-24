@@ -50,8 +50,10 @@
       margin-bottom: 10px;
     }
 
-    label:hover small:not(:hover) {
-      background-color: rgb(0 0 0 / 0.1);
+    @media (hover: hover) {
+      label:hover small:not(:hover) {
+        background-color: rgb(0 0 0 / 0.1);
+      }
     }
   }
 </style>

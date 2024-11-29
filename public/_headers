@@ -1,7 +1,7 @@
 /*
     X-Frame-Options: DENY
     Referrer-Policy: no-referrer
-    Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'none'; require-trusted-types-for 'script'; block-all-mixed-content;
+    Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; script-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'none'; require-trusted-types-for 'script'; block-all-mixed-content;
     Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), clipboard-read=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), usb=(), sync-xhr=(), xr-spatial-tracking=()
     Cross-Origin-Embedder-Policy: require-corp
     Cross-Origin-Opener-Policy: same-origin

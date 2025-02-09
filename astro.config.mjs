@@ -4,9 +4,9 @@ import mdx from "@astrojs/mdx";
 
 import sitemap from "@astrojs/sitemap";
 
-import tailwind from "@astrojs/tailwind";
-
 import playformCompress from "@playform/compress";
+
+import tailwindcss from "@tailwindcss/vite";
 
 const codeTheme = {
   settings: [
@@ -53,17 +53,24 @@ const codeTheme = {
 
 export default defineConfig({
   site: "https://fxgn.dev",
+
+  trailingSlash: "always",
+
   integrations: [
     mdx(),
     sitemap(),
-    tailwind(),
     playformCompress({
       Exclude: ["./images/logo-.*"],
     }),
   ],
+
   markdown: {
     shikiConfig: {
       theme: codeTheme,
     },
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

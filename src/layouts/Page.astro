@@ -1,7 +1,9 @@
 ---
-import ViewTransitions from "astro/components/ViewTransitions.astro";
+import { ClientRouter } from "astro:transitions";
 import { AstroSeo } from "@astrolib/seo";
 import { AstroFont } from "astro-font";
+
+import "../styles/global.css";
 
 const { title, description, pubDate } = Astro.props;
 
@@ -73,7 +75,7 @@ const canonicalUrl = formatCanonicalURL(
       href={new URL("rss.xml", Astro.site)}
     />
 
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <body>
@@ -87,14 +89,14 @@ const canonicalUrl = formatCanonicalURL(
     </header>
 
     <main
-      class="flex min-h-[calc(100dvh-2rem)] items-center justify-center px-8 pb-[2.5rem] pt-[4.5rem] sm:pb-[4.5rem] sm:pt-[6.5rem] lg:min-h-dvh lg:pb-[6.5rem]"
+      class="min-h-[calc(100dvh-2rem)] content-center px-8 pt-[4.5rem] pb-[2.5rem] sm:pt-[6.5rem] sm:pb-[4.5rem] lg:min-h-dvh lg:pb-[6.5rem]"
     >
-      <div class="max-w-screen-sm">
+      <div class="mx-auto max-w-fit">
         <slot />
       </div>
     </main>
 
-    <footer class="mb-2 mr-5 text-right lg:fixed lg:bottom-0 lg:right-0">
+    <footer class="mr-5 mb-2 text-right lg:fixed lg:right-0 lg:bottom-0">
       <p class="text-base">
         <a href="https://otomir23.me/webring/6/prev">← prev</a>
         <a href="https://otomir23.me/webring" class="font-bold">|webring|</a>

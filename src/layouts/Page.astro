@@ -1,5 +1,4 @@
 ---
-import { ClientRouter } from "astro:transitions";
 import { AstroSeo } from "@astrolib/seo";
 import { AstroFont } from "astro-font";
 
@@ -74,8 +73,6 @@ const canonicalUrl = formatCanonicalURL(
       title="fxgn"
       href={new URL("rss.xml", Astro.site)}
     />
-
-    <ClientRouter />
   </head>
 
   <body>

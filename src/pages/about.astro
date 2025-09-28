@@ -6,128 +6,108 @@ import Sidenote from "../components/Sidenote.astro";
 <Content title="about me" hideTitle>
 	<h1>hello.</h1>
 	<p>
-		I'm Pavel Zolotarevskiy, a developer & a senior high school
-		student from Moscow, Russia. Online I go by flexagoon, or fxgn
-		for short.<Sidenote>
+		I'm Pavel Zolotarevskiy, a developer from Moscow, Russia, currently studying
+		in Maastricht University in the Netherlands. Online I go by flexagoon, or
+		fxgn for short.<Sidenote>
 			<a href="/brand">Don't you dare</a> spell it any other way.
-		</Sidenote> I'm interested in many aspects of full-stack software
-		development, however, I'm mostly known for not having any meritable
-		projects in any of them.<Sidenote>
-			Maybe I'm too harsh on myself, as I do have a few fun
-			pet projects (see below). But I don't consider any of
-			them complex enough to be praise-worthy.
+		</Sidenote> I'm interested in many aspects of full-stack software development,
+		however, I'm mostly known for not having any meritable projects in any of them.<Sidenote
+		>
+			Maybe I'm too harsh on myself, as I do have a few fun pet projects (see
+			below). But I don't consider any of them complex enough to be
+			praise-worthy.
 		</Sidenote>
 	</p>
 
 	<p>
-		Once in a while I'm struck by the blessing of hyperfocus, which
-		grants me the ability to work on a single project for about 5
-		days before I get bored again. Sometimes I even manage to finish
-		a small project in those few days. Other times I don't, and I
-		have to begrudgingly add the task to my to-do list and get sad
-		every time I look at it.<Sidenote>
-			I use <a
-				href="https://en.wikipedia.org/wiki/Getting_Things_Done"
-				>GTD</a
-			> to feel productive. I don't know if it actually helps me
-			get anything done (as the name claims), but it does help
-			me avoid constant anxiety.
-		</Sidenote> Here are some of the most interesting projects that I
-		managed to complete without abandoning:
+		Once in a while I'm struck by the blessing of hyperfocus, which grants me
+		the ability to work on a single project for about 5 days before I get bored
+		again. Sometimes I even manage to finish a small project in those few days.
+		Other times I don't, and I have to begrudgingly add the task to my to-do
+		list and get sad every time I look at it.<Sidenote>
+			I use <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a> to
+			feel productive. I don't know if it actually helps me get anything done (as
+			the name claims), but it does help me avoid constant anxiety.
+		</Sidenote> Here are some of the most interesting projects that I managed to
+		complete without abandoning:
 	</p>
 
 	<ul>
 		<li>
-			<a href="https://github.com/flexagoon/ream">ream</a> is 1:1
-			standalone re-implementation of Telegram's export functionality.
-			This project was fun to write because it required me to sift
-			through Telegram's messy C++ code and figure out what's going
-			on. It was also <strong>NOT</strong> fun to write because
-			I, for some reason, decided to write it in Python.
+			<a href="https://github.com/flexagoon/ream">ream</a> is 1:1 standalone re-implementation
+			of Telegram's export functionality. This project was fun to write because it
+			required me to sift through Telegram's messy C++ code and figure out what's
+			going on. It was also <strong>NOT</strong> fun to write because I, for some
+			reason, decided to write it in Python.
 		</li>
 		<li>
-			<a href="https://github.com/flexagoon/automenu"
-				>automenu</a
-			> is a script I wrote for myself to parse my school cafeteria
-			menu and generate a meal plan for me using linear optimization.
-			I no longer use this since I no longer have a fully in-person
-			school schedule, but this was something I enjoyed making.
+			<a href="https://github.com/flexagoon/automenu">automenu</a> is a script I
+			wrote for myself to parse my school cafeteria menu and generate a meal plan
+			for me using linear optimization. I no longer use this since I no longer go
+			to school, but this was something I enjoyed making.
 		</li>
 		<li>
-			<a
-				href="https://github.com/flexagoon/rounded-window-corners"
+			<a href="https://github.com/flexagoon/rounded-window-corners"
 				>RWC reborn</a
-			> is a GNOME extension that adds rounded corners to windows.
-			It is technically a fork of the original RWC extension, but
-			most of the code is rewritten from scratch since the old
-			code was terrible. I hated working on this, but hey, at least
-			it helped me learn a lot about GNOME.<Sidenote
-				>Mainly that GNOME's documentation is absolutely
-				awful and you practically can't write an
-				extension without a lot of tribal knowledge.
+			> is a GNOME extension that adds rounded corners to windows. It is technically
+			a fork of the original RWC extension, but most of the code is rewritten from
+			scratch since the old code was terrible. I hated working on this, but hey,
+			at least it helped me learn a lot about GNOME.<Sidenote
+				>Mainly that GNOME's documentation is absolutely awful and you
+				practically can't write an extension without a lot of tribal knowledge.
 			</Sidenote>
 		</li>
 		<li>
-			<a href="https://github.com/flexagoon/med">med?</a> is a
-			web tool that accepts a name of a medicine and automatically
-			checks the number of research on it, also generating a summary
-			of the research using Claude API. I decided to write this
-			project because medicine in Russia is basically unregulated.
-			I'm writing it in Elixir, so I don't hate it.
+			<a href="https://github.com/flexagoon/med">med?</a> is a web tool that accepts
+			a name of a medicine and automatically checks the number of research on it,
+			also generating a summary of the research using Claude API. I decided to write
+			this project because medicine in Russia is basically unregulated. I'm writing
+			it in Elixir, so I don't hate it.
 		</li>
 	</ul>
 	<h2>this…</h2>
 	<p>
 		This website is <a href="https://github.com/flexagoon/fxgn.dev"
 			>a codebase</a
-		> I work on to relax; a zen garden of sorts. I don't know what it
-		is about front-end development, but for some reason it's an area
-		that I would never want to work in, but really enjoy toying around
-		with.
+		> I work on to relax; a zen garden of sorts. I don't know what it is about front-end
+		development, but for some reason it's an area that I would never want to work
+		in, but really enjoy toying around with.
 	</p>
 	<p>
-		I've re-written this site about 4 times in different stacks, and
-		finally settled on <a href="https://astro.build">Astro</a>,
-		which is absolutely fantastic. I've also tried multiple
-		different designs before making this monochrome version. The
-		current design is somewhat inspired by <a
+		I've re-written this site about 4 times in different stacks, and finally
+		settled on <a href="https://astro.build">Astro</a>, which is absolutely
+		fantastic. I've also tried multiple different designs before making this
+		monochrome version. The current design is somewhat inspired by <a
 			href="https://gwern.net">Gwern</a
-		>, and is essentially trying to be "Gwern but sans-serif".<Sidenote
-		>
-			You can see the similarities on the desktop version of
-			this site, with the sidenotes and stuff.
+		>, and is essentially trying to be "Gwern but sans-serif".<Sidenote>
+			You can see the similarities on the desktop version of this site, with the
+			sidenotes and stuff.
 		</Sidenote>
-		I'm not sure if it's succeeding, since the biggest part of Gwern's
-		brand is the sheer volume of content on his site, and I can't write
-		this much because I'm too busy worrying about all of the other stuff
-		I could be doing right now.
+		I'm not sure if it's succeeding, since the biggest part of Gwern's brand is the
+		sheer volume of content on his site, and I can't write this much because I'm
+		too busy worrying about all of the other stuff I could be doing right now.
 	</p>
 	<h2>…and that</h2>
 	<p>
-		Despite this page inadvertently sounding like a lament of a sad
-		lonely programmer, I'm actually not like that in real life. My
-		personal life details are probably too private to be put on a
-		public CC0-licensed website, but I'm generally a very happy and
-		extraverted person. As a proof that I have real friends, <a
-			href="https://site.ultrageopro.ru"
+		Despite this page inadvertently sounding like a lament of a sad lonely
+		programmer, I'm actually not like that in real life. My personal life
+		details are probably too private to be put on a public CC0-licensed website,
+		but I'm generally a very happy and extraverted person. As a proof that I
+		have real friends, <a href="https://site.ultrageopro.ru"
 			>here's a website of one of them</a
-		>. I forced him to learn Astro just for that, so I hope you
-		enjoy it.
+		>. I forced him to learn Astro just for that, so I hope you enjoy it.
 	</p>
 	<p>
 		I enjoy many things outside of programming.<Sidenote>
-			Perhaps too many. I hate the phrase "jack of all trades,
-			master of none", because of how accurately it describes
-			me.
-		</Sidenote> My biggest interests include economics, philosophy, some
-		branches of biology/chemistry, fun branches of mathematics like formal
-		logic,<Sidenote>
-			"Fun" usually means "elegant and with a lot of fancy
-			symbols".
-		</Sidenote> and having a lot of overly nuanced opinions no one cares
-		about. Maybe someday I'll put some of those opinions in my <a
-			href="/blog">blog</a
-		>, that way at least Googlebot will read them.
+			Perhaps too many. I hate the phrase "jack of all trades, master of none",
+			because of how accurately it describes me.
+		</Sidenote> My biggest interests include economics, philosophy, some branches
+		of biology/chemistry, fun branches of mathematics like formal logic,<Sidenote
+		>
+			"Fun" usually means "elegant and with a lot of fancy symbols".
+		</Sidenote> and having a lot of overly nuanced opinions no one cares about. Maybe
+		someday I'll put some of those opinions in my <a href="/blog">blog</a>, that
+		way at least Googlebot will read them.
 	</p>
 	<hr />
 	<p>Thanks for stopping by, wanderer. The road ever beckons.</p>

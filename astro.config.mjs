@@ -1,60 +1,18 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+
 import mdx from "@astrojs/mdx";
-
 import sitemap from "@astrojs/sitemap";
-
 import playformCompress from "@playform/compress";
-
 import tailwindcss from "@tailwindcss/vite";
 
-const codeTheme = {
-  settings: [
-    {
-      settings: {
-        background: "#ffffff",
-        foreground: "#000000",
-      },
-    },
-    {
-      scope: ["keyword.control", "keyword.other"],
-      settings: {
-        fontStyle: "underline bold",
-      },
-    },
-    {
-      scope: ["constant.language"],
-      settings: {
-        fontStyle: "underline italic",
-      },
-    },
-    {
-      scope: "support.function",
-      settings: {
-        fontStyle: "bold italic",
-      },
-    },
-    {
-      scope: "string",
-      settings: {
-        foreground: "#666666",
-        fontStyle: "italic",
-      },
-    },
-    {
-      scope: ["comment"],
-      settings: {
-        foreground: "#888888",
-        fontStyle: "italic",
-      },
-    },
-  ],
-};
+import codeTheme from "./src/styles/shiki/codeTheme";
+import caddyLang from "./src/styles/shiki/caddyfile.tmLanguage.json" assert {type: 'json'};
 
 export default defineConfig({
   site: "https://fxgn.dev",
 
-  trailingSlash: "always",
+  trailingSlash: "never",
 
   integrations: [
     mdx(),
@@ -67,6 +25,12 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: codeTheme,
+      langs: [
+        {
+          aliases: ['caddy', 'caddyfile'],
+          ...caddyLang
+        }
+      ]
     },
   },
 

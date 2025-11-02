@@ -30,7 +30,11 @@ Yeah, but only because the LLM bots simply **don't run JavaScript**.
 
 I recently selfhosted [Redlib](https://github.com/redlib-org/redlib), and despite not sharing my instance with anyone,
 it got rate-limited by Reddit due to all the scraper bots trying to get that sweet
-Reddit content. Here is my solution to the issue, a 12-line Caddyfile:
+Reddit content. Here is my solution to the issue, a 12-line Caddyfile:<Sidenote>A bunch of people have
+commented about some potential issues in this code snippet. Please note that this is just a small
+proof of concept which is enough for my usecase, but not for public-facing
+production sites - for example, it probably blocks search engine indexers and shows a blank screen
+to users without JS. You're free to adjust it as needed.</Sidenote>
 
 ```caddy
 domain.com {

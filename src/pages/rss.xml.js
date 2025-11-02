@@ -7,10 +7,11 @@ export async function GET(context) {
     title: "fxgn",
     description: "fxgn's blog",
     site: context.site,
+    trailingSlash: false,
     stylesheet: "/rss.xsl",
     items: posts.map((post) => ({
       ...post.data,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}`,
     })),
   });
 }

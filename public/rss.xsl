@@ -64,7 +64,10 @@
 
 <xsl:template match="item">
   <li>
-    <a href="{link}">
+    <a>
+      <xsl:attribute name="href">
+        <xsl:value-of select="link"/>
+      </xsl:attribute>
       <xsl:value-of select="title"/>
     </a>
   </li>

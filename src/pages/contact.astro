@@ -19,8 +19,20 @@ import Content from "../layouts/Content.astro";
       </tr>
       <tr>
         <td>email:</td>
-        <td><a href="mailto:me@fxgn.dev">me@fxgn.dev</a></td>
+        <td><a id="email" href="">me (at) fxgn (dot) dev</a></td>
       </tr>
     </tbody>
   </table>
 </Content>
+
+<script is:inline>
+  const emailLink = document.getElementById("email");
+  if (emailLink) {
+    const obfuscatedEmail = emailLink.textContent;
+    const email = obfuscatedEmail
+      .replace(" (at) ", "@")
+      .replace(" (dot) ", ".");
+    emailLink.href = "mailto:" + email;
+    emailLink.textContent = email;
+  }
+</script>

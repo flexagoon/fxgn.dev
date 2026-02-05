@@ -1,6 +1,6 @@
 ---
 import { AstroSeo } from "@astrolib/seo";
-import { AstroFont } from "astro-font";
+import { Font } from "astro:assets";
 
 import "../styles/global.css";
 
@@ -30,26 +30,7 @@ const canonicalUrl = formatCanonicalURL(
 
     <link rel="icon" type="image/svg+xml" href="/images/logo-color.svg" />
 
-    <AstroFont
-      config={[
-        {
-          name: "Inter Variable",
-          src: [
-            {
-              style: "normal",
-              path: "/fonts/InterVariable.woff2",
-            },
-            {
-              style: "italic",
-              path: "/fonts/InterVariable-Italic.woff2",
-            },
-          ],
-          display: "swap",
-          preload: true,
-          fallback: "sans-serif",
-        },
-      ]}
-    />
+    <Font cssVariable="--font-inter" preload />
 
     <AstroSeo
       title={title ? `${title} • fxgn` : "fxgn"}
@@ -74,7 +55,6 @@ const canonicalUrl = formatCanonicalURL(
       href={new URL("rss.xml", Astro.site)}
     />
   </head>
-
   <body>
     <header class="fixed top-0 w-full bg-white pt-4">
       <a

@@ -4,7 +4,7 @@
 
 @theme {
   /* https://github.com/system-fonts/modern-font-stacks */
-  --font-sans: "Inter Variable", Roboto, "Helvetica Neue", "Arial Nova",
+  --font-sans: var(--font-inter), Roboto, "Helvetica Neue", "Arial Nova",
     "Nimbus Sans", Arial, sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
     Consolas, "DejaVu Sans Mono", monospace;

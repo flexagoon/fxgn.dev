@@ -63,7 +63,12 @@ const canonicalUrl = formatCanonicalURL(
         href="/"
         class="mx-auto box-content block size-12 rounded-lg p-1 hover:bg-black/10 sm:size-20"
       >
-        <Logo class="h-12 sm:h-20" />
+        <!-- Logo has fallback inline styles to avoid flashing the svg fullscreen before css is loaded -->
+        <Logo
+          height={80}
+          style="display: block; margin: 0 auto"
+          class="h-12 sm:h-20"
+        />
       </a>
     </header>
 

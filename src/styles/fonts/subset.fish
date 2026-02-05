@@ -9,9 +9,12 @@
 set unicodes "20-7e,2019,201C,201D,2190,2192"
 
 function subset -a font
-	set file (path basename -E $font)
-	set ext (path extension $font)
-	fonttools subset $font --unicodes=$unicodes --flavor=woff2 --with-zopfli --layout-features='calt','kern' --output-file=subset/$font
+	fonttools subset $font \
+		--unicodes=$unicodes \
+		--flavor=woff2 \
+		--with-zopfli \
+		--layout-features='calt','kern' \
+		--output-file=subset/$font
 end
 
 subset InterVariable.woff2

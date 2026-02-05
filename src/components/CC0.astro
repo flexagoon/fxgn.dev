@@ -4,6 +4,9 @@
 
 import { Image } from "astro:assets";
 
+import CCLogo from "./svg/cc.svg";
+import CCZero from "./svg/cc0.svg";
+
 const { title, url } = Astro.props;
 ---
 
@@ -22,19 +25,11 @@ const { title, url } = Astro.props;
 			href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1"
 			target="_blank"
 			rel="license noopener noreferrer"
-			>CC0 1.0<Image
-				width="17"
-				height="17"
+			>CC0 1.0<CCLogo
+				width={17}
+				height={17}
 				class="mt-0 mb-0 ml-1 inline-block"
-				src="/images/cc.svg"
-				alt="Creative Commons Logo"
-			/><Image
-				width="17"
-				height="17"
-				class="mt-0 mb-0 ml-1 inline-block"
-				src="/images/cc0.svg"
-				alt="CC0 1.0 Badge"
-			/></a
+			/><CCZero width="17" height="17" class="mt-0 mb-0 ml-1 inline-block" /></a
 		>
 	</span>
 </p>

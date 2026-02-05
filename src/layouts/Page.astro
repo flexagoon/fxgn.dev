@@ -2,6 +2,8 @@
 import { AstroSeo } from "@astrolib/seo";
 import { Font } from "astro:assets";
 
+import Logo from "../components/svg/logo.svg";
+
 import "../styles/global.css";
 
 const { title, description, pubDate } = Astro.props;
@@ -61,7 +63,7 @@ const canonicalUrl = formatCanonicalURL(
         href="/"
         class="mx-auto box-content block size-12 rounded-lg p-1 hover:bg-black/10 sm:size-20"
       >
-        <img src="/images/logo-black.svg" alt="logo" class="h-12 sm:h-20" />
+        <Logo class="h-12 sm:h-20" />
       </a>
     </header>
 

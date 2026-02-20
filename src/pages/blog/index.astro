@@ -7,7 +7,7 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<Page title="blog">
+<Page title="blog" directory>
   <h1 class="mb-2 text-5xl/tight font-extrabold italic">blog</h1>
   <ol class="list-decimal" reversed="true">
     {

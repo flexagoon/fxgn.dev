@@ -14,7 +14,6 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
-    "@astrolib/seo": "1.0.0-beta.8",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",

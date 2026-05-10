@@ -9,9 +9,10 @@ import tailwindcss from "@tailwindcss/vite";
 import codeTheme from "./src/styles/shiki/codeTheme";
 import caddyLang from "./src/styles/shiki/caddyfile.tmLanguage.json" assert { type: "json" };
 
+import cloudflare from "@astrojs/cloudflare";
+
 export default defineConfig({
   site: "https://fxgn.dev",
-
   trailingSlash: "never",
 
   integrations: [
@@ -59,4 +60,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare()
 });

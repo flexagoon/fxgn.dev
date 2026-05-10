@@ -1,0 +1,6 @@
+name = "fxgn"
+compatibility_date = "2026-05-11"
+
+[assets]
+directory = "./dist"
+html_handling = "none"

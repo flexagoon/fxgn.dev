@@ -12,7 +12,9 @@ import caddyLang from "./src/styles/shiki/caddyfile.tmLanguage.json" assert { ty
 export default defineConfig({
   site: "https://fxgn.dev",
 
-  trailingSlash: "never",
+  build: {
+    format: 'preserve',
+  },
 
   integrations: [
     mdx(),

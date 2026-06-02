@@ -9,6 +9,7 @@ export async function GET(context) {
     site: context.site,
     trailingSlash: false,
     stylesheet: "/rss.xsl",
+    customData: '<atom:link href="https://fxgn.dev/rss.xml" rel="self" type="application/rss+xml" />',
     items: posts.map((post) => ({
       ...post.data,
       link: `/blog/${post.id}`,

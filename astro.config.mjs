@@ -24,27 +24,25 @@ export default defineConfig({
     }),
   ],
 
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.local(),
-        name: "Inter",
-        cssVariable: "--font-inter",
-        options: {
-          variants: [
-            {
-              style: "normal",
-              src: ["./src/styles/fonts/subset/InterVariable.woff2"],
-            },
-            {
-              style: "italic",
-              src: ["./src/styles/fonts/subset/InterVariable-Italic.woff2"],
-            },
-          ],
-        },
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: "Inter",
+      cssVariable: "--font-inter",
+      options: {
+        variants: [
+          {
+            style: "normal",
+            src: ["./src/styles/fonts/subset/InterVariable.woff2"],
+          },
+          {
+            style: "italic",
+            src: ["./src/styles/fonts/subset/InterVariable-Italic.woff2"],
+          },
+        ],
       },
-    ],
-  },
+    },
+  ],
 
   markdown: {
     shikiConfig: {

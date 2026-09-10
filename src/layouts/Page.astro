@@ -38,15 +38,15 @@ const canonicalUrl = formatCanonicalURL(Astro.url);
     <meta property="og:title" content={title} />
     <meta property="og:site_name" content="fxgn" />
     <meta property="og:description" content={description} />
-    {
-      pubDate && (
+    {pubDate && (
+      <>
         <meta
           property="article:published_time"
           content={(pubDate as Date).toISOString()}
         />
         <meta property="article:author" content="fxgn" />
-      )
-    }
+      </>
+    )}
 
     <Font cssVariable="--font-inter" preload />
 

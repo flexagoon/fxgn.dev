@@ -10,17 +10,13 @@ const posts = (await getCollection("blog")).sort(
 <Page title="blog" directory>
   <h1 class="mb-2 text-5xl/tight font-extrabold italic">blog</h1>
   <ol class="list-decimal" reversed="true">
-    {
-      posts.map((post) => (
-        <li>
-          <a
-            class="text-2xl italic underline hover:bg-black/10"
-            href={`/blog/${post.id}`}
-          >
-            {post.data.title}
-          </a>
-        </li>
-      ))
-    }
+    {posts.map((post) => <li>
+      <a
+        class="text-2xl italic underline hover:bg-black/10"
+        href={`/blog/${post.id}`}
+      >
+        {post.data.title}
+      </a>
+    </li>)}
   </ol>
 </Page>

@@ -3,7 +3,6 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import playformCompress from "@playform/compress";
 import tailwindcss from "@tailwindcss/vite";
 
 import codeTheme from "./src/styles/shiki/codeTheme";
@@ -16,13 +15,7 @@ export default defineConfig({
     format: 'preserve',
   },
 
-  integrations: [
-    mdx(),
-    sitemap(),
-    playformCompress({
-      Exclude: ["./images/logo-.*"],
-    }),
-  ],
+  integrations: [mdx(), sitemap()],
 
   fonts: [
     {
